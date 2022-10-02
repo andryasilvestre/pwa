@@ -6,7 +6,11 @@ self.addEventListener('install', event => {
     console.log('Service Worker activating.');
   });
   
-  self.addEventListener('fetch', async e =>{
+  self.addEventListener('activate', e =>{
+    self.clients.claim()
+})
+
+self.addEventListener('fetch', async e =>{
     const req = e.request
     const url = new URL(req.url)
 
@@ -35,8 +39,3 @@ async function networkAndCache(req){
         return cached
     }
 }
-  
-  self.addEventListener('activate', e =>{
-    self.clients.claim()
-})
-
