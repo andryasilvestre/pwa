@@ -6,7 +6,26 @@ self.addEventListener('install', event => {
     console.log('Service Worker activating.');
   });
   
-  self.addEventListener('activate', e =>{
+/*const cacheName = 'PI Senac'
+
+self.addEventListener('install', function(event){
+    event.waitUntil(
+        caches.open(cacheName).then(function(cache){
+            cache.addAll([
+                './',
+                './index.html',
+                './generic.html',
+                './elements.html',
+                './manifest.json',
+                './index.js',
+                './service-worker.js'
+            ])
+        })
+    )
+    return self.skipWaiting()
+})
+
+self.addEventListener('activate', e =>{
     self.clients.claim()
 })
 
@@ -38,4 +57,4 @@ async function networkAndCache(req){
         const cached = await cache.match(req);
         return cached
     }
-}
+} */
