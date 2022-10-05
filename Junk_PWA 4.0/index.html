@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--
+	PWA adaptado do seguinte modelo: 
+
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Monitoramento ABDI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="manifest" href="manifest.json">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="msapplication-TileImage" content="images\icons_set\144.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="shortcut icon" sizes="192x192" href="assets/img/icon_192.png">
+		<link rel="shortcut icon" sizes="128x128" href="assets/img/icon_128.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="PWA Teste">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<link rel="apple-touch-icon" href="images\icons_set\ic_launcher.png">
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images\playstore.png" alt="" /></span><span class="title">Monitoramento ABDI</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Filtrar</a></li>
+							<li><a href="suporte.html">Suporte</a></li>
+							<li><a href="elements.html">Sair</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Bem-vinda, Empresa X!
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<p>Problemas nas últimas horas</p>
+										<img src="images\Motores\grafico.png" alt="" />
+										<br> 
+										<br> 
+									</span>
+									</a>
+								</article>
+									<!-- daqui até  -->
+									
+								<h2>Histórico</h2>	
+								<article class="style2">
+									<span class="image">
+										<img src="images\Motores\motor2.png" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Motores</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images\Motores\Injetora2.png" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Injetoras</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+										
+
+				<!-- Footer -->
+					<footer id="footer" class="main-footer">
+			<ul class="copyright">
+				© 2022 ABDI. Todos os direitos reservados</li>
+			</ul> 
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="manifest.json"></script>
+			<script src="service-worker.js"></script>
+										<script>
+											if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('service.worker.js')
+    .then(serviceWorker => {
+      console.log('Service Worker registered: ' + serviceWorker);
+    })
+    .catch(error => {
+      console.log('Error registering the Service Worker: ' + error);
+    });
+}
+										  </script>
+										  <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js"
+										  integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1"
+										  crossorigin="anonymous"></script>
+</body>
+
+</html>
